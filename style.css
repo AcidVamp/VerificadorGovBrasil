@@ -1,0 +1,206 @@
+/* Reset e comportamento consistente */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f9;
+  height: 100%;
+  overflow-x: hidden; /* Evita rolagem lateral */
+}
+
+header {
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  flex-wrap: wrap;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+}
+
+.logo-area img {
+  height: 28px;
+  margin-right: 10px;
+}
+
+.menu-button {
+  font-size: 24px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  margin-right: 10px;
+}
+
+.icons-area {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.icons-area img {
+  height: 20px;
+  cursor: pointer;
+}
+
+.btn-entrar {
+  background-color: #003399;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 260px;
+  height: 100%;
+  background-color: #001b3f;
+  color: white;
+  padding: 20px;
+  overflow-y: auto;
+  transition: left 0.3s ease;
+  z-index: 9999;
+}
+
+.side-menu h4 {
+  border-bottom: 1px solid #444;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.side-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.side-menu ul li {
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+}
+
+.side-menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.side-menu a:hover {
+  text-decoration: underline;
+}
+
+.side-menu .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.container {
+  padding: 20px;
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  min-height: calc(100vh - 200px);
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.verificar-btn {
+  background-color: #e53935;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.whatsapp-btn {
+  background-color: #25D366;
+  color: white;
+}
+
+h2 {
+  color: #003399;
+}
+
+.banner-stack a {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.banner-stack img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+footer {
+  background-color: #001b3f;
+  color: white;
+  padding: 40px 20px;
+  font-size: 0.9rem;
+}
+
+footer h4 {
+  margin-top: 20px;
+  color: #ffffff;
+}
+
+.footer-section {
+  margin-bottom: 20px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.social-icons img {
+  height: 24px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  font-size: 0.75rem;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}

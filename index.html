@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gov Brasil Validador</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-top">
+      <div class="logo-area">
+        <button class="menu-button" onclick="abrirMenu()">☰</button>
+        <img src="https://barra.sistema.gov.br/v1/assets/govbr.webp" alt="gov.br">
+      </div>
+      <div class="icons-area">
+        <a href="https://www.gov.br/pt-br" target="_blank">
+  <img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="Grid">
+        </a>
+        <a href="https://sso.acesso.gov.br/login?client_id=portal-logado.estaleiro.serpro.gov.br&authorization_id=19665e22c17" class="btn-entrar">Entrar</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="side-menu" id="sideMenu">
+    <button class="close-btn" onclick="fecharMenu()">×</button>
+    <h4>Serviços</h4>
+    <ul>
+      <li><a href="#">Temas em Destaque</a></li>
+      <li><a href="#">Notícias</a></li>
+      <li><a href="#">Galeria de Aplicativos</a></li>
+      <li><a href="#">Acompanhe o Planalto</a></li>
+      <li><a href="#">Consultar Solicitações</a></li>
+    </ul>
+    <h4>Governo</h4>
+    <ul>
+      <li><a href="#">Órgãos do Governo</a></li>
+      <li><a href="#">Por dentro do gov.br</a></li>
+      <li><a href="#">Canais do Executivo Federal</a></li>
+      <li><a href="#">Empresas e Negócios</a></li>
+      <li><a href="#">Simplifique!</a></li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <label for="busca">Informe o NOME ou CPF:</label>
+    <input type="text" id="busca" placeholder="NOME COMPLETO OU CPF">
+    <button class="verificar-btn" onclick="verificarPaciente()">Verificar</button>
+    <div id="resultado">
+  <div id="loading" style="display: none; text-align: center; margin-top: 20px;">
+    <img src="https://i.gifer.com/ZZ5H.gif" alt="Carregando..." style="height: 40px;">
+    <p>Carregando informações...</p>
+  </div>
+</div>
+
+    <p>Consulte pelo nosso Whatsapp</p>
+    <button class="whatsapp-btn" onclick="window.open('https://wa.me/5599999999999', '_blank')">Enviar Mensagem</button>
+<section class="versao-beta" style="padding: 24px; background-color: #eaf2f8; border-radius: 12px; margin-top: 40px;">
+  <h2 style="color: #003366; font-size: 20px;">Versão Beta do Sistema</h2>
+  <p style="font-size: 16px; line-height: 1.5;">
+    O <strong>Gov Brasil Validador</strong> está em <strong>fase beta</strong>. Esta versão preliminar apresenta nosso sistema de validação de documentos médicos, priorizando agilidade e confiabilidade.
+  </p>
+  <p style="font-size: 16px; line-height: 1.5;">
+    A base de dados é integrada a unidades públicas de saúde (como UPAs e hospitais) e clínicas privadas parceiras, garantindo uma verificação <strong>rápida e segura</strong>.
+  </p>
+  <p style="font-size: 16px; line-height: 1.5;">
+    Encontrou algum <strong>erro</strong> ou <strong>inconsistência</strong>? Fale conosco pelo nosso canal no <strong>WhatsApp</strong>. Sua ajuda é fundamental para melhorarmos continuamente.
+  </p>
+  <p style="font-size: 16px; line-height: 1.5;">
+    Plataforma mantida com apoio da <strong>VERCEL</strong> e operada via <strong>V.E.R.C.E.L</strong> — <em>Validador Eletrônico de Registros Clínicos, de Exames e Laudos</em>.
+  </p>
+</section>
+      <div class="banner-stack">
+  <a href="https://www.gov.br/pt-br/temas/protocolo-gov-br">
+    <img src="https://www.gov.br/pt-br/pagina-inicial/@@collective.cover.banner/f43eb4e0-957f-4c44-ac33-01276ac4b9f5/@@images/91edb714-321e-4e22-a392-53837bf9494e.png" alt="">
+  </a>
+  <a href="https://agenciagov.ebc.com.br/">
+    <img src="https://www.gov.br/pt-br/pagina-inicial/@@collective.cover.banner/b2cade03-e30d-4b29-84a9-8930897c664c/@@images/4cd296a3-16a2-4a67-9907-b83bddc49151.jpeg" alt="">
+  </a>
+  <a href="https://www.gov.br/contratamaisbrasil/pt-br">
+    <img src="https://www.gov.br/pt-br/pagina-inicial/@@collective.cover.banner/f1cb994e-2fcf-46be-a24c-c079c2a3fde4/@@images/91beb5b2-caac-4a90-a8d2-1539faa4e56b.jpeg" alt="">
+  </a>
+  <a href="https://www.gov.br/mulheres/pt-br/central-de-conteudos/campanhas/2024/feminicidio-zero">
+    <img src="https://www.gov.br/pt-br/pagina-inicial/@@collective.cover.banner/a8ae6ce6-d7d6-43fa-aa0c-a3d7aee9ba58/@@images/eb116e7f-1be9-4702-a02e-2f2d260af840.png" alt="">
+  </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-section">
+      <h4>Serviços</h4>
+      <ul>
+        <li>Temas em destaque</li>
+        <li>Notícias</li>
+        <li>Galeria de aplicativos</li>
+        <li>Acompanhe o Planalto</li>
+        <li>Consultar minhas solicitações</li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Governo</h4>
+      <ul>
+        <li>Órgãos do Governo</li>
+        <li>Por dentro do gov.br</li>
+        <li>Canais do Executivo Federal</li>
+        <li>Empresas e Negócios</li>
+        <li>Simplifique!</li>
+      </ul>
+    </div>
+<div class="footer-section" style="margin-top: 30px;">
+  <h4 style="color: white; font-size: 18px; margin-bottom: 10px;">Redes Sociais</h4>
+  <div class="social-icons" style="display: flex; flex-wrap: wrap; gap: 10px;">
+    <a href="#" target="_blank" title="Instagram">
+      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384031.png" alt="Instagram" width="24" height="24" style="filter: brightness(0) invert(1);">
+    </a>
+    <a href="#" target="_blank" title="Facebook">
+      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384028.png" alt="Facebook" width="24" height="24" style="filter: brightness(0) invert(1);">
+    </a>
+    <a href="#" target="_blank" title="YouTube">
+      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384012.png" alt="YouTube" width="24" height="24" style="filter: brightness(0) invert(1);">
+    </a>
+    <a href="#" target="_blank" title="LinkedIn">
+      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384017.png" alt="LinkedIn" width="24" height="24" style="filter: brightness(0) invert(1);">
+    </a>
+    <a href="#" target="_blank" title="WhatsApp">
+      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384015.png" alt="WhatsApp" width="24" height="24" style="filter: brightness(0) invert(1);">
+    </a>
+    <a href="#" target="_blank" title="TikTok">
+      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png" alt="TikTok" width="24" height="24" style="filter: brightness(0) invert(1);">
+    </a>
+  </div>
+</div>
+    <div class="footer-bottom">
+      <p>Todo o conteúdo deste site está publicado sob a licença Creative Commons Atribuição-SemDerivações 3.0 Não Adaptada.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="supabase.js"></script>
+  
+</body>
+</html>
