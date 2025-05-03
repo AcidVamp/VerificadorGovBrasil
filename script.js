@@ -20,7 +20,7 @@ function verificarPaciente() {
 
   setTimeout(() => {
     const baseDados = [
-  { nome: 'Kevin Cruz Lima', cpf: '080.373.035-78', codigo: '8OP2JAA1', dias: 1, cid: 'R10', unidade: 'UPA 24h CABULA' },
+  { nome: 'Kevin Cruz Lima', cpf: '080.373.035-78', codigo: '8OP2JA1', dias: 01 'Dias 03/05/2025', cid: 'R10', unidade: 'UPA 24h CABULA' },
   { nome: 'Leticia Machado Bastos', cpf: '777.777.777-77', codigo: '7K7K7K', dias: 0, cid: 'B34.9', unidade: 'Caps' },
   { nome: 'João Silva', cpf: '789123', codigo: 'JOA2025', dias: 5, cid: 'C10', unidade: 'Clínica Sul' } // Novo cadastro
 ];
