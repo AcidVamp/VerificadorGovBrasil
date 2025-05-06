@@ -22,7 +22,7 @@ function verificarPaciente() {
     const baseDados = [
   { nome: 'Kevin Cruz Lima', cpf: '080.373.035-78', codigo: '8OP2JA1', dias: 01 , cid: 'R10', unidade: 'UPA 24h CABULA' },
   { nome: 'Leticia Machado Bastos', cpf: '777.777.777-77', codigo: '7K7K7K', dias: 0, cid: 'B34.9', unidade: 'Caps' },
-  { nome: 'João Silva', cpf: '789123', codigo: 'JOA2025', dias: 5, cid: 'C10', unidade: 'Clínica Sul' } // Novo cadastro
+  { nome: 'Ramon Rodrigues Lima', cpf: '064.292.854-13' , codigo: '07/05/2025', dias: 3, cid: 'H92', unidade: 'Clínica Amor Saúde - Fortaleza' } // Novo cadastro
 ];
 
     const encontrado = baseDados.find(p =>
